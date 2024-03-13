@@ -1,9 +1,12 @@
-txt = "abc"
+txt = "abcaa"
 
+vowel_count = 0
 # count the vowels in some text
 # in abc, one vowel
 
-# print(txt.split())
-
 for char in txt:
-    print(char)
+    if char in ["a", "e", "i", "o", "u"]:
+        # increment a counter
+        vowel_count += 1
+
+print(f"number of vowels is {vowel_count}")
